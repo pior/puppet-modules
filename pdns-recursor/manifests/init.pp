@@ -1,7 +1,7 @@
 
 class pdns-recursor {
 	$pdnsrecursor_bind = "0.0.0.0"	
-	$pdnsrecursor_allow = "127.0.0.0/8, 10.0.0.0/8, 69.28.213.0/25"	
+	$pdnsrecursor_allow = "127.0.0.0/8, 10.0.0.0/8, $production_ip_net"	
 	include pdns-recursor::base
 }
 
